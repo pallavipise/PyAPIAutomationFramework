@@ -1,0 +1,1 @@
+[1m[31mERROR   [0m tests.integration_test.test_create_booking:test_create_booking.py:43 This is error Logs

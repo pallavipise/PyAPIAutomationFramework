@@ -16,17 +16,22 @@ def post_request(url, auth, headers, payload, in_json):
     return post_response_data
 
 
-def patch_data(url, auth, headers, payload, in_json):
-    patch_response_data = requests.patch(url=url, headers=headers, auth=auth, data=json.dumps(payload))
+def put_data(url, headers, payload, in_json):
+    patch_response_data = requests.patch(url=url, headers=headers, data=json.dumps(payload))
     if in_json is True:
         return patch_response_data.json()
     return patch_response_data
 
 
-def delete_data(url, auth, headers, in_json):
-    delete_response_data = requests.delete(url=url, headers=headers, auth=auth)
+def patch_data(url, headers, payload, in_json):
+    patch_response_data = requests.patch(url=url, headers=headers, data=json.dumps(payload))
     if in_json is True:
-        return delete_response_data.json()
+        return patch_response_data.json()
+    return patch_response_data
+
+
+def delete_data(url, headers):
+    delete_response_data = requests.delete(url=url, headers=headers)
     return delete_response_data
 
 

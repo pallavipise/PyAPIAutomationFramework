@@ -12,3 +12,8 @@ def verify_key(key):
     assert key > 0, "Key should be greater than zero" + key
 
 
+def verify_authtokenid(tokenid):
+    assert len(tokenid) != 0, "tokenid is not Empty : " + tokenid
+    assert len(tokenid) > 0, "tokenid should be greater then zero : " + tokenid
+
+

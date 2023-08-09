@@ -18,7 +18,7 @@ URL = https://restful-booker.herokuapp.com/apidoc/index.html
 
 ## Install pip packages 
 - ` pip install pytest pytest-html allure-pytest jsonschema `
-- ` pip install requirements.txt `
+- ` pip install -r requirements.txt `
 
 ## How to run locally and see the report?
 'pytest tests/integration_test/test_create_booking.py -s -v --alluredir=./reports --html=report.html'

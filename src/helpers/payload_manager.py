@@ -21,3 +21,25 @@ def payload_create_token():
     return payload_token
 
 
+def payload_update_booking():
+    payload_update =  {
+        "firstname": "Pallavi",
+        "lastname": "Pise",
+        "totalprice": 111,
+        "depositpaid": True,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+    }
+    return payload_update
+
+def payload_partial_update():
+    payload_partialupdate =  {
+        "firstname": "Akshat",
+        "lastname": "Raj",
+    }
+    return payload_partialupdate
+
+
